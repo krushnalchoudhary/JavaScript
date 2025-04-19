@@ -1,0 +1,64 @@
+
+Sure! Let’s break down **stack memory** and **heap memory** in **JavaScript** with a simple explanation:
+
+---
+
+### 🧠 **Stack Memory**
+
+- **Used for:** *Primitive values* and *function execution context* (like numbers, booleans, `undefined`, `null`, and strings).
+- **Memory Type:** Fixed-size and fast.
+- **Storage Behavior:** *Last In, First Out* (LIFO).
+- **Scope:** Local to functions.
+- **Auto-managed:** When a function ends, the data in the stack is automatically popped off.
+
+#### Example:
+```js
+function add() {
+  let a = 10;      // stored in stack
+  let b = 20;      // stored in stack
+  let sum = a + b; // sum also in stack
+  return sum;
+}
+```
+
+🗂️ Here, all variables (`a`, `b`, `sum`) are **primitives**, so they’re stored directly in **stack memory**.
+
+---
+
+### 🧳 **Heap Memory**
+
+- **Used for:** *Objects*, *arrays*, and *functions*.
+- **Memory Type:** Larger and slower.
+- **Storage Behavior:** Dynamic allocation (can grow or shrink).
+- **Scope:** Accessible globally if referenced.
+- **Garbage-collected:** When no reference points to an object, it’s cleaned up by the engine.
+
+#### Example:
+```js
+function createUser() {
+  const user = {
+    name: "Alice",
+    age: 25
+  };
+  return user;
+}
+```
+
+🗃️ The object `user` is stored in **heap memory**, and the **reference** to it is stored in the **stack**.
+
+---
+
+### 🧩 Combined Example:
+
+```js
+let age = 30; // Stack (primitive)
+
+let person = {
+  name: "John",  // Heap
+  age: age       // Heap value references a primitive in stack
+};
+```
+
+📌 `person` is a reference in the stack pointing to a structure in the heap.
+
+
