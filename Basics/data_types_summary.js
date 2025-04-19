@@ -73,3 +73,29 @@
  console.log(typeof obj);
  console.log(typeof myfunction);
  console.log(typeof score);
+
+
+ //Stack (Primitive)   , 
+ //Heap (Non Primitive)
+
+
+ let first = "firstName"
+ let first1 = first
+
+  first1 = "lastName"
+
+  console.log(first);
+  console.log(first1);
+  
+
+  let userOne  = {
+    email : "userone1@gmail.com",
+    upi : "user@ybl"
+  }
+
+  let userTwo = userOne
+
+  userTwo.email = "userTwo2@gmail.com";
+
+  console.log(userOne.email);
+  console.log(userTwo.email);
