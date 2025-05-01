@@ -38,6 +38,7 @@ const obj5 = {...obj1 , ...obj2}
 console.log(obj5);
 
 console.log(Object.keys(appUser));
+console.log(Object.keys(appUser));
 console.log(Object.values(appUser));
 console.log(Object.entries(appUser))
 console.log(appUser.hasOwnProperty("name"))

@@ -9,11 +9,11 @@ const {learningPlateform} = course
 console.log(learningPlateform)
 
 
-{
-    "name" : "Krushnal",
-    "courseName" : "JS",
-    "Price" : "free"
-}
+// {
+//     "name" : "Krushnal",
+//     "courseName" : "JS",
+//     "Price" : "free"
+// }
 
 
 // const navbar =  ({company}) =>{

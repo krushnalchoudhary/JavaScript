@@ -27,7 +27,7 @@ User.greetings = function(){
 console.log(User.greetings)
 console.log(User.greetings())
 
-
+console.log(User.greetings())
 User.greetings2 = function(){
     console.log(`Hello  , ${this.name}`)
 }
