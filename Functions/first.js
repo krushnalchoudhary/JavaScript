@@ -21,3 +21,17 @@ function loginUserMessage(username){
 }
 
 console.log(loginUserMessage("Krushnal"));
+
+
+function calculateCartPrice(...number1){
+    return number1;
+}
+
+console.log (calculateCartPrice(200,300,400));
+
+const myarray = [100,200,300];
+function retArray(myarray){
+    return myarray;
+}
+
+console.log(retArray(myarray));
